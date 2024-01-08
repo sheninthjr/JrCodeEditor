@@ -28,7 +28,7 @@ export default function Coding() {
       const result = eval(code);
       console.log = originalConsoleLog;
       setOutput(
-        result !== undefined ? result.toString() : "Output is undefined or null"
+        result !== undefined ? result.toString() : ""
       );
       setConsoleOutput(
         consoleMessages.map((msg: any) => msg.join(" ")).join("\n")

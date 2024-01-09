@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import RecoidContextProvider from "./lib/recoilContextProvider";
+import RecoilContextProvider from "./lib/recoilContextProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <RecoidContextProvider>{children}</RecoidContextProvider>
+        <RecoilContextProvider>{children}</RecoilContextProvider>
       </body>
     </html>
   );
